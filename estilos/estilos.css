@@ -2,22 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: sans-serif;
 }
-body {
-  font-family: sans-serif;
-  position: relative;
+html {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+.contenido {
+  margin: 0;
+  width: 1200px;
 }
 header {
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(
+  background-image:/* linear-gradient(
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
-    ),
-    url(img2.jpg);
+    ),*/ url(/img/img3.jpg);
   background-size: cover;
   color: #fff;
   padding: 20px 40px;
@@ -33,16 +33,6 @@ nav {
   margin: 0 auto;
   width: 120px;
 }
-header,
-a {
-  color: whitesmoke;
-}
-.titulo-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: black;*/
-}
 .titulo-contenido {
   width: 1200px;
   position: absolute;
@@ -53,10 +43,6 @@ a {
 .titulo-contenido-dentro {
   width: 50%;
 }
-a {
-  text-decoration: none;
-  padding-right: 30px;
-}
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
@@ -66,12 +52,6 @@ p {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 48px;
-}
-.titulo-opcion {
-  text-decoration: none;
-  color: #f7f7f7;
-  text-transform: uppercase;
-  padding-right: 30px;
 }
 .btn:link,
 .btn:visited {
@@ -84,3 +64,27 @@ p {
   padding: 16px 32px;
   border-radius: 9px;
 }
+.titulo-menu {
+  text-decoration: none;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+.titulo {
+  font-size: 65px;
+}
+header,
+a {
+  color: whitesmoke;
+}
+.titulo-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: black;*/
+}
+
+/*a {
+  text-decoration: none;
+  padding-right: 30px;
+}*/
