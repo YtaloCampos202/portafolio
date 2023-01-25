@@ -70,8 +70,12 @@ a:last-child {
 .tarjeta {
   /* border: 5px solid black;*/
   width: 350px;
+  height: 450px;
   margin: 0 auto;
   border-radius: 20px;
+  /*  SOMBRAS */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.7);
+  /* 1920 x 1280*/
 }
 .img-tarjeta {
   width: 100%;
@@ -97,6 +101,7 @@ a:last-child {
 }
 .tarjeta p {
   margin-bottom: 30px;
+  padding-left: 10px;
 }
 .tarjeta-boton {
   text-align: center;
