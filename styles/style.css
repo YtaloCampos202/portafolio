@@ -32,11 +32,25 @@
   padding-left: 10%;
   color: #ffffff;
 }
+
+.proto {
+  width: 100vh;
+  height: 100vh;
+}
+
+.proto2 {
+  height: 100vh;
+  background-color: #fbf8ef;
+}
+.fo {
+  background-color: #100e0e;
+}
 /*********************************/
 .contenedor {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  /*width: 100vw;
+  height: 100vh;*/
+
   overflow: hidden;
 }
 
@@ -44,11 +58,15 @@
   /*object-fit: cover;
   display: block;
   background: rgba(163, 23, 23, 0.5);*/
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100%;*/
   object-fit: cover;
   display: block;
   position: relative;
+  /**/
+  background-image: url(/img/img6.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 .texto-superpuesto {
@@ -64,6 +82,43 @@
 }
 .Mdescripcion {
   width: 400px;
+  text-align: left;
+}
+/************************************/
+.seccion1 {
+  height: 100vh;
+  background-color: #fbf8ef;
+  position: relative;
+}
+.seccion2 {
+  height: 100vh;
+}
+.seccion3 {
+  height: 100vh;
+  background-color: #fbf8ef;
+}
+.foota {
+  background-color: #100e0e;
+  color: #ffffff;
+}
+.Mimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative; /* Cambiamos a position: relative */
+}
+.tsuperpuesto {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.Mcaja {
+  width: 420px;
   text-align: left;
 }
 /*

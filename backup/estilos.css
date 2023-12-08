@@ -24,11 +24,7 @@ header {
   margin: 0 auto;*/
   color: #fff;
 }
-.image-back {
-  background-image: url(/img/img3.jpg);
-  background-size: cover;
-  height: 100vh;
-}
+
 header a {
   text-decoration: none;
   text-transform: uppercase;
