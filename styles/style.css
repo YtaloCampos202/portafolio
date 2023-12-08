@@ -97,10 +97,6 @@
   height: 100vh;
   background-color: #fbf8ef;
 }
-.foota {
-  background-color: #100e0e;
-  color: #ffffff;
-}
 .Mimg {
   height: 100%;
   width: 100%;
@@ -120,6 +116,94 @@
 .Mcaja {
   width: 420px;
   text-align: left;
+}
+.tarjetas {
+  border-radius: 10px;
+  border: #c8c6c6 1px solid;
+  width: 350px;
+  height: 150%;
+}
+.TImagen {
+  width: 350px;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.PTarjetas {
+  /*width: 1200px;
+  border: #100e0e 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;*/
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3.2%;
+}
+.Tbtn {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Tseccion {
+  font-size: 75px;
+  padding-left: 25px;
+  margin-bottom: 45px;
+}
+.link {
+  padding-left: 10%;
+  font-size: 25px;
+}
+.Ccuadro {
+  border-radius: 15px;
+  width: 25%;
+  height: 150%;
+  background-color: #ffffff;
+  margin-right: 5%;
+  display: grid;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+.Pcuadro {
+  display: grid;
+  justify-items: right;
+}
+.Ctitulo {
+  margin-bottom: 15px;
+}
+.col-md-11 {
+  margin-top: -3px;
+}
+.btnContacto {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.Ttexto {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.unico {
+  margin-bottom: px;
+}
+.foot {
+  background-color: #100e0e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Ftexto {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Cfoot {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  text-align: center;
+  justify-content: space-between;
+  align-self: center;
 }
 /*
 #FFFFFF -- color de textos
