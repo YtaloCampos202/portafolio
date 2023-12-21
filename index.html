@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ytalo Campos</title>
+
     <link rel="stylesheet" href="/styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -11,6 +12,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="/img/favicon.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,64 +21,6 @@
     />
   </head>
   <body>
-    <!--<div class="contenedor">
-      <header class="navegador">
-        <div><h1 class="titulo">Ytalo Campos</h1></div>
-        <nav class="lmenu">
-          <a class="emenu" href="#">Home</a>
-          <a class="emenu" href="#">Proyectos</a>
-          <a class="emenu" href="#">Contáctame</a>
-        </nav>
-      </header>
-      <section>
-        <div class="contenedor">
-          <img class="MImagen" src="/img/img6.jpg" alt="" />
-          <p class="Mdescripcion">
-            ¡Hola! Soy programador Junior. Siempre estoy en constante
-            aprendizaje, combinando el arte con la tecnologia
-          </p>
-          <button type="button" class="btn btn-primary">ver proyectos</button>
-        </div>
-      </section>
-
-
-      <section class="proto">
-        <div>
-          <h2>a</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            doloribus eum ducimus enim commodi voluptate illum maiores quis
-            natus quia ratione dolore facere aliquam, recusandae autem alias
-            velit omnis! Distinctio!
-          </p>
-        </div>
-      </section>
-      <section class="proto2">
-        <div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            veniam enim dignissimos voluptate, maxime, maiores debitis suscipit
-            molestiae inventore quasi, voluptatum mollitia tempora ullam ipsam
-            ea ratione beatae perspiciatis repellat?
-          </p>
-        </div>
-      </section>
-      <footer class="fo">d</footer>
-       <div class="contenedor">
-      <div class="MImagen">
-        <img class="MImagen" src="/img/img6.jpg" alt="" />
-
-        <div class="texto-superpuesto">
-          <p class="Mdescripcion">
-            ¡Hola! Soy programador Junior. Siempre estoy en constante
-            aprendizaje, combinando el arte con la tecnologia
-          </p>
-          <div>
-            <button type="button" class="btn btn-primary">ver proyectos</button>
-          </div>
-        </div>
-      </div>
-    </div>!-->
     <div class="contenedor">
       <header>
         <header class="navegador">
@@ -175,57 +119,83 @@
       <section class="seccion3">
         <p class="Tseccion">contactame</p>
         <div></div>
-        <div class="Pcuadro">
-          <div class="Ccuadro">
-            <div class="col-md-11">
-              <h3 class="Ctitulo">Tu Correo</h3>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="ingrese su correo"
-              />
-            </div>
-            <div class="col-md-11">
-              <h3>Nombre</h3>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput2"
-                placeholder="ingrese su nombre"
-              />
-            </div>
-            <div class="col-md-11">
-              <h3>Mensaje</h3>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="ingrese su mensaje"
-              ></textarea>
-            </div>
-            <div class="btnContacto">
-              <div class="col-md-5">
-                <button type="button" class="btn btn-primary col-md-11">
-                  Enviar
-                </button>
+        <form
+          action="https:/formsubmit.co/ytalo.llamoccacampos@outlook.es"
+          method="POST"
+          id="id_form_registra"
+        >
+          <div class="Pcuadro">
+            <div class="Ccuadro">
+              <div class="col-md-11">
+                <h3 class="Ctitulo">Tu Correo</h3>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id_reg_email"
+                  placeholder="ingrese su correo"
+                  name="email"
+                />
               </div>
-              <div class="col-md-5">
-                <button type="button" class="btn btn-light col-md-11">
-                  Borrar
-                </button>
+              <div class="col-md-11">
+                <h3>Nombre</h3>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput2"
+                  placeholder="ingrese su nombre"
+                  name="name"
+                />
+              </div>
+              <div class="col-md-11">
+                <h3>Mensaje</h3>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="ingrese su mensaje"
+                  name="subject"
+                ></textarea>
+              </div>
+              <div class="btnContacto">
+                <div class="col-md-5">
+                  <button type="submit" class="btn btn-primary col-md-11">
+                    Enviar
+                  </button>
+
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://127.0.0.1:5500/index.html"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                </div>
+                <div class="col-md-5">
+                  <button type="button" class="btn btn-light col-md-11">
+                    Borrar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
       <!--footer-->
       <footer class="foot">
         <div class="Cfoot">
           <div>
-            <a href="#" class="Ftexto">Linkdln</a>
+            <a
+              href="https://www.linkedin.com/in/ytalo-llamocca-campos-256a9a202/"
+              class="Ftexto"
+              >Linkdln</a
+            >
           </div>
-          <div><a href="#" class="Ftexto">GitHub</a></div>
+          <div>
+            <a
+              href="https://github.com/YtaloCampos202?tab=repositories"
+              class="Ftexto"
+              >GitHub</a
+            >
+          </div>
           <div><a href="#" class="Ftexto">Instagram</a></div>
         </div>
       </footer>
