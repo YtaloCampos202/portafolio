@@ -2,11 +2,27 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: black;
-}
+
 .container {
   border: 1px solid white;
   width: 90%;
   margin: 0 auto;
+}
+.FImagen {
+  width: 300px;
+}
+.fTarjeta {
+  width: 300px;
+  border: 1px solid black;
+}
+.CTarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+}
+.TTitle {
+  text-align: center;
+}
+.navegador {
+  margin-bottom: 20px;
 }
