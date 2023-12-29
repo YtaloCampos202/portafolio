@@ -18,6 +18,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link rel="icon" href="/img/favicon.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +33,7 @@
         <header class="navegador">
           <div><h1 class="titulo">Ytalo Campos</h1></div>
           <nav class="lmenu">
-            <a class="emenu" href="#">Home</a>
+            <a class="emenu" href="#">Inicio</a>
             <a class="emenu" href="/pages/project.html">Proyectos</a>
             <a class="emenu" href="/pages/contact.html">Contáctame</a>
           </nav>
@@ -59,15 +60,12 @@
           <div class="tarjetas">
             <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
             <div>
+              <h2 class="tarjeta-titulo">Banco ABc</h2>
               <p class="Ttexto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                animi, ut reiciendis voluptates molestias voluptate cumque
-                dolores harum aliquid velit ullam incidunt expedita ex at magni
-                temporibus itaque. Explicabo, doloremque. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Doloribus eaque adipisci ad
-                quo iste numquam aut, molestias praesentium! Ullam quaerat
-                excepturi quidem dolore commodi numquam nam quos aliquid dicta
-                at?
+                Este proyecto consiste en el desarrollo de una aplicación web
+                para un banco, con el objetivo de proporcionar a los usuarios
+                funcionalidades esenciales como solicitar, aprobar, pagar, y
+                revisar los estados de préstamos.
               </p>
               <div class="Tbtn">
                 <button type="button" class="btn btn-primary">
@@ -80,15 +78,12 @@
           <div class="tarjetas">
             <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
             <div>
+              <h2 class="tarjeta-titulo">BookShare</h2>
               <p class="Ttexto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                animi, ut reiciendis voluptates molestias voluptate cumque
-                dolores harum aliquid velit ullam incidunt expedita ex at magni
-                temporibus itaque. Explicabo, doloremque. Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Illo voluptatem laboriosam
-                veniam iusto ad tempora incidunt quisquam aperiam natus
-                delectus, ipsam beatae ducimus sit ea autem accusamus obcaecati
-                aliquam maxime?
+                El desarrollo de una aplicación móvil dedicada al préstamo de
+                libros. Los usuarios podrán registrarse en BookShare y acceder
+                al servicio de consultas y solicitudes de préstamos de libros a
+                través de una aplicación móvil desarrollado en iOS
               </p>
               <div class="Tbtn">
                 <button type="button" class="btn btn-primary">
@@ -101,15 +96,12 @@
           <div class="tarjetas">
             <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
             <div>
+              <h2 class="tarjeta-titulo">Sistema de parqueo</h2>
               <p class="Ttexto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                animi, ut reiciendis voluptates molestias voluptate cumque
-                dolores harum aliquid velit ullam incidunt expedita ex at magni
-                temporibus itaque. Explicabo, doloremque. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Libero facilis sequi sit unde
-                perferendis possimus eveniet consectetur distinctio nobis,
-                ducimus esse placeat corporis dolorem saepe similique tenetur!
-                Magnam, assumenda dolorum.
+                El proyecto es un Sistema de registro de Parqueo, en cual tiene
+                como principal función mantener un orden administrativo de los
+                automóviles que quieren parquear, así como un registro de las
+                horas, como los días parqueados de cada usuario.
               </p>
               <div class="Tbtn">
                 <button type="button" class="unico btn btn-primary">
@@ -131,6 +123,7 @@
           action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
           method="POST"
           id="id_form_registra"
+          onsubmit="return validateForm()"
         >
           <div class="Pcuadro">
             <div class="Ccuadro">
@@ -142,7 +135,9 @@
                   id="id_reg_email"
                   placeholder="ingrese su correo"
                   name="email"
+                  oninput="validateEmail()"
                 />
+                <span id="emailError" class="error"></span>
               </div>
               <div class="col-md-11">
                 <h3>Nombre</h3>
@@ -152,7 +147,9 @@
                   id="exampleFormControlInput2"
                   placeholder="ingrese su nombre"
                   name="name"
+                  oninput="validateName()"
                 />
+                <span id="nameError" class="error"></span>
               </div>
               <div class="col-md-11">
                 <h3>Mensaje</h3>
@@ -162,22 +159,44 @@
                   rows="3"
                   placeholder="ingrese su mensaje"
                   name="subject"
+                  oninput="validateSubject()"
                 ></textarea>
+                <span id="subjectError" class="error"></span>
+                <!---->
+                <div
+                  id="successMessage"
+                  class="alert-success success-message"
+                ></div>
+                <!-- <div
+                  class="success-message alert alert-success"
+                  id="successMessage"
+                  role="alert"
+                >
+                  A simple success alert—check it out!
+                </div>-->
+                <!---->
               </div>
               <div class="btnContacto">
                 <div class="col-md-5">
-                  <button type="submit" class="btn btn-primary col-md-11">
+                  <button
+                    type="submit"
+                    class="btn btn-primary col-md-11 .modal-lg"
+                  >
                     Enviar
                   </button>
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://ytalocampos202.github.io/portafolio/"
+                    value="http://127.0.0.1:5500/index.html"
                   />
                   <input type="hidden" name="_captcha" value="false" />
                 </div>
                 <div class="col-md-5">
-                  <button type="button" class="btn btn-light col-md-11">
+                  <button
+                    type="button"
+                    class="btn btn-light col-md-11"
+                    onclick="borrarFormulario()"
+                  >
                     Borrar
                   </button>
                 </div>
@@ -185,6 +204,39 @@
             </div>
           </div>
         </form>
+        <!-- <form
+          action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
+          method="POST"
+          id="id_form_registra"
+          onsubmit="return validateForm()"
+        >
+          <div class="col-md-11">
+            <h3>Nombre</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput2"
+              placeholder="Ingrese su nombre"
+              name="name"
+              oninput="validateName()"
+            />
+            <span id="nameError" class="error"></span>
+            
+          </div>
+
+          <div class="col-md-11">
+            <h3 class="Ctitulo">Tu Correo</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="id_reg_email"
+              placeholder="Ingrese su correo"
+              name="email"
+            />
+            <span id="emailError" class="error"></span>
+           
+          </div>
+        </form> -->
       </section>
       <!--footer-->
       <footer class="foot">
@@ -193,25 +245,27 @@
             <a
               href="https://www.linkedin.com/in/ytalo-llamocca-campos-256a9a202/"
               class="Ftexto"
-              >Linkdln</a
+            >
+              <img src="/img/ilinkdln.svg" alt="" class="ficon" />Linkdln</a
             >
           </div>
           <div>
             <a
               href="https://github.com/YtaloCampos202?tab=repositories"
               class="Ftexto"
-              >GitHub</a
+            >
+              <img src="/img/iconGithub.svg" alt="" class="ficon" /> GitHub</a
             >
           </div>
-          <div><a href="#" class="Ftexto">Instagram</a></div>
+          <div>
+            <a href="#" class="Ftexto">
+              <img src="/img/instagram.svg" alt="" class="ficon iconoins" />
+              Instagram</a
+            >
+          </div>
         </div>
       </footer>
     </div>
     <script src="script/scripts.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
