@@ -4,16 +4,20 @@
 }
 
 .container {
-  border: 1px solid white;
   width: 90%;
   margin: 0 auto;
 }
 .FImagen {
-  width: 300px;
+  width: 298px;
+  border-radius: 10px 10px 0px 0px;
 }
 .fTarjeta {
   width: 300px;
-  border: 1px solid black;
+  height: 610px;
+
+  border-radius: 15px;
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 .CTarjetas {
   display: grid;
@@ -22,7 +26,73 @@
 }
 .TTitle {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .navegador {
   margin-bottom: 20px;
+}
+.Fbtn {
+  position: absolute;
+  bottom: 10px; /* ajusta la distancia desde abajo según tus necesidades */
+  left: 50%; /* centra el botón horizontalmente en el figure */
+  transform: translateX(-50%); /* ajusta la posición horizontal para centrar */
+  padding: 10px 20px; /* ajusta el padding según tus necesidades */ /* ajusta el color del texto según tus necesidades */
+  border: none;
+  cursor: pointer;
+}
+.textof {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 15px;
+  line-height: 1.9;
+}
+.fix {
+  font-size: 1.9rem;
+}
+footer {
+  background-color: black;
+  padding: 20px 0 20px 0;
+}
+.flinks {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.flinks a {
+  text-decoration: none;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.flinks a:hover {
+  color: #ebebeb;
+}
+.ficon {
+  width: 25px;
+  align-items: center;
+  margin-right: 5px;
+}
+header {
+  background-color: black;
+  margin-bottom: 25px;
+}
+.hmenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.hnav {
+  color: #ffffff;
+  text-decoration: none;
+}
+.hnav:hover {
+  color: #ebebeb;
+}
+.hcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
 }
