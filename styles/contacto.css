@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  /* background-color: #124b83;*/
+  font-family: "Open Sans", sans-serif;
+}
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  font-family: Khula;
+  font-size: 4em;
+  text-align: center;
+  height: 200px;
+  width: 600px;
+  display: flex;
+  /*position: absolute;*/
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+/**/
+.seccion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 75rem;
+  gap: 10rem;
+  row-gap: 1rem;
+
+  align-self: center;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 0.1rem solid #c8c6c6;
+  border-radius: 1rem;
+}
+input {
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+input,
+textarea {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  /**/
+
+  padding: 12px 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px;
+  background-color: #ffd700;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 17px;
+  border-radius: 0 0 10px 10px;
+}
+button:hover {
+  background-color: #b39e27;
+  transition: 850ms;
+}
+.seccion-contenido {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconos {
+  width: 3rem;
+  margin-right: 1.3rem;
+  cursor: pointer;
+}
