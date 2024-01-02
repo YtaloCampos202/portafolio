@@ -261,3 +261,19 @@ figcaption {
   padding-bottom: 13px;
   padding-left: 50px;
 }
+/**transicion de texto*/
+.figure-proyectos,
+.link-proyectos,
+.formulario,
+.footer-contenido {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+.figure-proyectos--visible,
+.link-proyectos--visible,
+.formulario--visible,
+.footer-contenido--visible {
+  transform: translateY(0);
+  opacity: 1;
+}

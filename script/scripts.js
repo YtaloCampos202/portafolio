@@ -119,3 +119,76 @@ function borrarFormulario() {
   var successMessage = document.getElementById("successMessage");
   successMessage.classList.add("hidden");
 }
+/** animacion de desaparecion*/
+const paragraphs = document.querySelectorAll(".figure-proyectos");
+const paragraph2 = document.querySelectorAll(".link-proyectos");
+const paragraph3 = document.querySelectorAll(".formulario");
+const paragraph4 = document.querySelectorAll(".footer-contenido");
+
+document.addEventListener("scroll", function () {
+  paragraphs.forEach((paragraph) => {
+    if (isInView(paragraph)) {
+      paragraph.classList.add("figure-proyectos--visible");
+    }
+  });
+});
+
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
+/////////////////////////////////////////////////////////////////
+document.addEventListener("scroll", function () {
+  paragraph2.forEach((paragraphh) => {
+    if (isInViewlink(paragraphh)) {
+      paragraphh.classList.add("link-proyectos--visible");
+    }
+  });
+});
+
+function isInViewlink(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
+/////////////////////////////////////////////////////////////////
+document.addEventListener("scroll", function () {
+  paragraph3.forEach((paragraphhh) => {
+    if (isInViewlink(paragraphhh)) {
+      paragraphhh.classList.add("link-proyectos--visible");
+    }
+  });
+});
+
+function isInViewFormulario(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
+/////////////////////////////////////////////////////////////////
+document.addEventListener("scroll", function () {
+  paragraph4.forEach((paragraphhhh) => {
+    if (isInView(paragraphhhh)) {
+      paragraphhhh.classList.add("footer-contenido--visible");
+    }
+  });
+});
+
+function isInViewFooter(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
