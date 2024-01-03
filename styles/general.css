@@ -101,6 +101,62 @@ body {
   transform: translateY(-4.5%);
   transition: 1500ms;
 }
+/*****header fijado****/
+header {
+  background-color: #124b83;
+  /*padding: 15px;*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 10000;
+}
+.error {
+  color: red;
+  margin-left: 3.4rem;
+  margin-top: 0.7rem;
+}
+
+input.error {
+  border: 1px solid red;
+}
+textarea.error {
+  border: 1px solid red;
+}
+/*header h1 {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}*/
 /*
 #124B83- color azul
 */

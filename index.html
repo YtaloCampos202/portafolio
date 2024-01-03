@@ -4,268 +4,208 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ytalo Campos</title>
-    <!--<link
-      rel="stylesheet"
-      href="https://ytalocampos202.github.io/portafolio/styles/style.css"
-    />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="styles/style.css" />!-->
-
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-
-    <link rel="icon" href="/img/favicon.jpeg" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,200&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/img/favicon.jpeg" />
   </head>
   <body>
-    <div class="contenedor">
-      <header>
-        <header class="navegador">
-          <div><h1 class="titulo">Ytalo Campos</h1></div>
-          <nav class="lmenu">
-            <a class="emenu" href="#">Inicio</a>
-            <a class="emenu" href="/pages/project.html">Proyectos</a>
-            <a class="emenu" href="/pages/contact.html">Contáctame</a>
+    <header class="header">
+      <div class="contenedor">
+        <div class="contenedor-header">
+          <h1>Ytalo Campos</h1>
+          <nav class="nav">
+            <ul class="nav-menu">
+              <li
+                class="menu-li"
+                onclick="scrollToSectionInicio('seccion-inicio')"
+              >
+                Inicio
+              </li>
+              <li class="menu-li" onclick="irProyectos()">Proyectos</li>
+              <li class="menu-li" onclick="irContactame()">Contactame</li>
+            </ul>
           </nav>
-        </header>
-      </header>
-      <!--section 1-->
-      <section class="seccion1">
-        <!--<img src="/img/img6.jpg" alt="" class="Mimg" />!-->
-        <div class="tsuperpuesto">
-          <p class="Mcaja">
-            ¡Hola! Soy programador Junior. Siempre estoy en constante
-            aprendizaje, combinando el arte con la tecnologia
-          </p>
-          <button type="button" class="btn btn-primary" onclick="irProyectos()">
-            ver proyectos
-          </button>
         </div>
-      </section>
-      <!--section 2-->
-      <section class="seccion2">
-        <p class="Tseccion">Mis proyectos</p>
-        <div class="PTarjetas">
-          <!--Tarjeta 1-->
-          <div class="tarjetas">
-            <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
+      </div>
+    </header>
+    <section class="pantalla-inicio" id="seccion-inicio">
+      <div class="contenedor">
+        <div class="contenedor-presentacion">
+          <div class="presentacion">
+            <h3 class="titulo-presentacion">¡Hola!, Soy Ytalo Campos</h3>
+            <p class="texto">
+              ¡Hola! Soy programador Junior. Siempre estoy en constante
+              aprendizaje, combinando el arte con la tecnologia.
+            </p>
+            <button class="btn" onclick="irProyectos()">Ver Proyectos</button>
             <div>
-              <h2 class="tarjeta-titulo">Banco ABc</h2>
-              <p class="Ttexto">
-                Este proyecto consiste en el desarrollo de una aplicación web
-                para un banco, con el objetivo de proporcionar a los usuarios
-                funcionalidades esenciales como solicitar, aprobar, pagar, y
-                revisar los estados de préstamos.
-              </p>
-              <div class="Tbtn">
-                <button type="button" class="btn btn-primary">
-                  ver proyectos
-                </button>
-              </div>
+              <img src="/img/javascript.png" alt="" />
+              <img src="/img/python.png" alt="" />
+              <img src="/img/angular.png" alt="" />
+              <img src="/img/java.png" alt="" />
+              <img src="/img/c.png" alt="" />
             </div>
           </div>
-          <!--Tarjeta 2-->
-          <div class="tarjetas">
-            <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
-            <div>
-              <h2 class="tarjeta-titulo">BookShare</h2>
-              <p class="Ttexto">
-                El desarrollo de una aplicación móvil dedicada al préstamo de
-                libros. Los usuarios podrán registrarse en BookShare y acceder
-                al servicio de consultas y solicitudes de préstamos de libros a
-                través de una aplicación móvil desarrollado en iOS
-              </p>
-              <div class="Tbtn">
-                <button type="button" class="btn btn-primary">
-                  ver proyectos
-                </button>
-              </div>
-            </div>
-          </div>
-          <!--Tarjeta 3-->
-          <div class="tarjetas">
-            <img src="/img/tarjeta1.jpg" alt="" class="TImagen" />
-            <div>
-              <h2 class="tarjeta-titulo">Sistema de parqueo</h2>
-              <p class="Ttexto">
-                El proyecto es un Sistema de registro de Parqueo, en cual tiene
-                como principal función mantener un orden administrativo de los
-                automóviles que quieren parquear, así como un registro de las
-                horas, como los días parqueados de cada usuario.
-              </p>
-              <div class="Tbtn">
-                <button type="button" class="unico btn btn-primary">
-                  ver proyectos
-                </button>
-              </div>
-            </div>
-          </div>
+          <p class="texto-presentacion">Developer Front-end</p>
         </div>
-        <div></div>
-        <div></div>
-        <a href="/pages/project.html" class="link">Ver todos los proyectos</a>
-      </section>
-      <!--section 3-->
-      <section class="seccion3">
-        <p class="Tseccion">contactame</p>
-        <div></div>
-        <form
-          action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
-          method="POST"
-          id="id_form_registra"
-          onsubmit="return validateForm()"
-        >
-          <div class="Pcuadro">
-            <div class="Ccuadro">
-              <div class="col-md-11">
-                <h3 class="Ctitulo">Tu Correo</h3>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="id_reg_email"
-                  placeholder="ingrese su correo"
-                  name="email"
-                  oninput="validateEmail()"
-                />
-                <span id="emailError" class="error"></span>
-              </div>
-              <div class="col-md-11">
-                <h3>Nombre</h3>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput2"
-                  placeholder="ingrese su nombre"
-                  name="name"
-                  oninput="validateName()"
-                />
-                <span id="nameError" class="error"></span>
-              </div>
-              <div class="col-md-11">
-                <h3>Mensaje</h3>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="ingrese su mensaje"
-                  name="subject"
-                  oninput="validateSubject()"
-                ></textarea>
-                <span id="subjectError" class="error"></span>
-                <!---->
-                <div
-                  id="successMessage"
-                  class="alert-success success-message"
-                ></div>
-                <!-- <div
-                  class="success-message alert alert-success"
-                  id="successMessage"
-                  role="alert"
-                >
-                  A simple success alert—check it out!
-                </div>-->
-                <!---->
-              </div>
-              <div class="btnContacto">
-                <div class="col-md-5">
-                  <button
-                    type="submit"
-                    class="btn btn-primary col-md-11 .modal-lg"
-                  >
-                    Enviar
-                  </button>
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="http://127.0.0.1:5500/index.html"
-                  />
-                  <input type="hidden" name="_captcha" value="false" />
-                </div>
-                <div class="col-md-5">
-                  <button
-                    type="button"
-                    class="btn btn-light col-md-11"
-                    onclick="borrarFormulario()"
-                  >
-                    Borrar
-                  </button>
-                </div>
-              </div>
+      </div>
+    </section>
+    <section class="pantalla-proyectos contenedor">
+      <h2>Mis Proyectos</h2>
+      <div class="contenedor-tarjetas">
+        <figure class="figure-proyectos">
+          <img src="/img/banco 2.jpg" alt="" class="tarjeta-img" />
+          <h3 class="tarjeta-titulo">Banco ABc</h3>
+          <figcaption>
+            <p class="proyecto-descripcion">
+              Este proyecto consiste en el desarrollo de una aplicación web para
+              un banco, con el objetivo de proporcionar a los usuarios
+              funcionalidades esenciales como solicitar, aprobar, pagar, y
+              revisar los estados de préstamos.
+            </p>
+            <div class="proyecto-caracteristica">
+              <ul>
+                <li class="caracteristica-primero">java</li>
+                <li class="caracteristica-segundo">javascript</li>
+                <li class="caracteristica-primero">SQL</li>
+              </ul>
             </div>
-          </div>
-        </form>
-        <!-- <form
-          action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
-          method="POST"
-          id="id_form_registra"
-          onsubmit="return validateForm()"
-        >
-          <div class="col-md-11">
-            <h3>Nombre</h3>
+            <button class="btn-tarjeta" onclick="irRepo2()">
+              Ver Proyecto
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="figure-proyectos">
+          <img src="/img/Bookshare.jpg" alt="" class="tarjeta-img" />
+          <h3 class="tarjeta-titulo">BookShare</h3>
+          <figcaption>
+            <p class="proyecto-descripcion">
+              El desarrollo de una aplicación móvil dedicada al préstamo de
+              libros. Los usuarios podrán registrarse en BookShare y acceder al
+              servicio de consultas y solicitudes de préstamos de libros a
+              través de una aplicación móvil desarrollado en iOS.
+            </p>
+            <div class="proyecto-caracteristica">
+              <ul>
+                <li class="caracteristica">swift</li>
+                <li class="caracteristica">firebase</li>
+              </ul>
+            </div>
+            <button class="btn-tarjeta" onclick="irRepo2()">
+              Ver Proyecto
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="figure-proyectos">
+          <img src="/img/rparqueo.jpg" alt="" class="tarjeta-img" />
+          <h3 class="tarjeta-titulo">Sistema de parqueo</h3>
+          <figcaption>
+            <p class="proyecto-descripcion">
+              El proyecto es un Sistema de registro de Parqueo, en cual tiene
+              como principal función mantener un orden administrativo de los
+              automóviles que quieren parquear, así como un registro de las
+              horas, como los días parqueados de cada usuario.
+            </p>
+            <div class="proyecto-caracteristica">
+              <ul>
+                <li class="caracteristica-tercero">C#</li>
+                <li class="caracteristica-tercero-dos">javascript</li>
+                <li class="caracteristica-tercero">SQL</li>
+              </ul>
+            </div>
+            <button class="btn-tarjeta" onclick="irRepo3()">
+              Ver Proyecto
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+      <a href="/pages/proyecto.html" class="link-proyectos"
+        >ver todos los proyectos</a
+      >
+    </section>
+    <section class="pantalla-contactame" id="seccion-fomulario">
+      <div class="contenedor">
+        <h2>Contactáme</h2>
+        <div class="tarjeta-contenedor">
+          <form
+            action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
+            method="POST"
+            class="formulario"
+            id="id_form_registra"
+            onsubmit="return validateForm()"
+          >
+            <div class="contenido-formulario">
+              <label for="">Nombre</label>
+              <input
+                type="text"
+                class="input-contenido"
+                id="exampleFormControlInput2"
+                oninput="validateName()"
+                name="name"
+              />
+              <span id="nameError" class="error"></span>
+              <label for="">Email</label>
+              <input
+                type="text"
+                class="input-contenido"
+                id="id_reg_email"
+                name="email"
+                oninput="validateEmail()"
+              />
+              <span id="emailError" class="error"></span>
+              <label for="">Mensaje</label>
+              <textarea
+                rows="5"
+                class="input-contenido"
+                id="exampleFormControlTextarea1"
+                name="subject"
+                oninput="validateSubject()"
+              ></textarea>
+              <span id="subjectError" class="error"></span>
+            </div>
+            <button type="submit" class="btn-formulario">Enviar</button>
             <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput2"
-              placeholder="Ingrese su nombre"
-              name="name"
-              oninput="validateName()"
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/indexo.html"
             />
-            <span id="nameError" class="error"></span>
-            
-          </div>
-
-          <div class="col-md-11">
-            <h3 class="Ctitulo">Tu Correo</h3>
-            <input
-              type="text"
-              class="form-control"
-              id="id_reg_email"
-              placeholder="Ingrese su correo"
-              name="email"
-            />
-            <span id="emailError" class="error"></span>
-           
-          </div>
-        </form> -->
-      </section>
-      <!--footer-->
-      <footer class="foot">
-        <div class="Cfoot">
-          <div>
-            <a
-              href="https://www.linkedin.com/in/ytalo-llamocca-campos-256a9a202/"
-              class="Ftexto"
-            >
-              <img src="/img/ilinkdln.svg" alt="" class="ficon" />Linkdln</a
-            >
-          </div>
-          <div>
-            <a
-              href="https://github.com/YtaloCampos202?tab=repositories"
-              class="Ftexto"
-            >
-              <img src="/img/iconGithub.svg" alt="" class="ficon" /> GitHub</a
-            >
-          </div>
-          <div>
-            <a href="#" class="Ftexto">
-              <img src="/img/instagram.svg" alt="" class="ficon iconoins" />
-              Instagram</a
-            >
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-linea"></div>
+      <div class="contenedor">
+        <div class="footer-contenido">
+          <h3>© 2024 Polaris corporation</h3>
+          <div class="lista-contacto">
+            <div>
+              <h3>contacto</h3>
+              <ul class="footer-lista">
+                <li onclick="scrollToSection('seccion-fomulario')">email</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Sigueme</h3>
+              <ul class="footer-lista">
+                <li onclick="irGithub()">GitHub</li>
+                <li onclick="irLinkdln()">Linkdln</li>
+                <li onclick="irSpotify()">
+                  <img src="" alt="" class="footer-icono" />Spotify
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script src="script/scripts.js"></script>
+      </div>
+    </footer>
+    <script src="/script/scripts.js"></script>
   </body>
 </html>

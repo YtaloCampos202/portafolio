@@ -22,8 +22,10 @@
           <h1>Ytalo Campos</h1>
           <nav class="nav">
             <ul class="nav-menu-proyecto">
-              <li class="menu-li-proyecto">Inicio</li>
-              <li class="menu-li-proyecto">Contactame</li>
+              <li class="menu-li-proyecto" onclick="irInicio()">Inicio</li>
+              <li class="menu-li-proyecto" onclick="irContactame()">
+                Contactame
+              </li>
             </ul>
           </nav>
         </div>
@@ -159,15 +161,17 @@
             <div>
               <h3>contacto</h3>
               <ul class="footer-lista">
-                <li>email</li>
+                <li onclick="irContactame()">email</li>
               </ul>
             </div>
             <div>
               <h3>Sigueme</h3>
               <ul class="footer-lista">
-                <li>GitHub</li>
-                <li>Linkdln</li>
-                <li><img src="" alt="" class="footer-icono" />Spotify</li>
+                <li onclick="irGithub()">GitHub</li>
+                <li onclick="irLinkdln()">Linkdln</li>
+                <li onclick="irSpotify()">
+                  <img src="" alt="" class="footer-icono" />Spotify
+                </li>
               </ul>
             </div>
           </div>

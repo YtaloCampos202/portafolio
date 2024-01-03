@@ -1,7 +1,46 @@
 console.log("asdqwdzw");
 //
 function irProyectos() {
-  window.location.href = "project.html";
+  window.location.href = "/pages/proyecto.html";
+}
+function irContactame() {
+  window.location.href = "/pages/contacto.html";
+}
+function irRepo2() {
+  window.location.href = "https://github.com/YtaloCampos202?tab=repositories";
+}
+function irRepo3() {
+  window.location.href = "https://github.com/YtaloCampos202/sistema_rparqueo";
+}
+function irFormulario() {
+  window.location.href = ".formulario";
+}
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+function scrollToSectionInicio(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+function irGithub() {
+  window.location.href = "https://github.com/YtaloCampos202?tab=repositories";
+}
+function irLinkdln() {
+  window.location.href =
+    "https://www.linkedin.com/in/ytalo-llamocca-campos-256a9a202/";
+}
+function irSpotify() {
+  window.location.href =
+    "https://open.spotify.com/playlist/12juSqxPfziQBMrlMf7yuW";
+}
+function irInicio() {
+  window.location.href = "/index.html";
 }
 //
 function validateName() {

@@ -44,6 +44,7 @@ body {
   background-color: #ffffff;
   border: 0.1rem solid #c8c6c6;
   border-radius: 1rem;
+  height: auto;
 }
 input {
   padding-top: 15px;
@@ -89,4 +90,20 @@ button:hover {
   width: 3rem;
   margin-right: 1.3rem;
   cursor: pointer;
+}
+.error {
+  color: red;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+.error:first-child {
+  color: red;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+input.error {
+  border: 1px solid red;
+}
+textarea.error {
+  border: 1px solid red;
 }

@@ -16,17 +16,45 @@
   <body>
     <section class="seccion">
       <div class="seccion-contenido">
-        <form action="" class="formulario">
-          <input type="text" placeholder="Ingrese su nombre" />
-          <input type="email" placeholder="Ingrese su email" />
+        <form
+          action="https://formsubmit.co/ytalo.llamoccacampos@outlook.es"
+          class="formulario"
+          id="id_form_registra"
+          onsubmit="return validateForm()"
+          method="POST"
+        >
+          <input
+            type="text"
+            placeholder="Ingrese su nombre"
+            id="exampleFormControlInput2"
+            oninput="validateName()"
+            name="name"
+          />
+          <span id="nameError" class="error"></span>
+          <input
+            type="email"
+            placeholder="Ingrese su email"
+            id="id_reg_email"
+            name="email"
+            oninput="validateEmail()"
+          />
+          <span id="emailError" class="error"></span>
           <textarea
-            name=""
-            id=""
             cols="30"
             rows="10"
             placeholder="Ingrese su mensaje"
+            id="exampleFormControlTextarea1"
+            name="subject"
+            oninput="validateSubject()"
           ></textarea>
-          <button>Enviar</button>
+          <span id="subjectError" class="error"></span>
+          <button type="submit">Enviar</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/pages/contacto.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
       </div>
       <div class="console-container">
@@ -34,13 +62,29 @@
         <div class="console-underscore" id="console">&#95;</div>
       </div>
       <div>
-        <img src="/img/icono-linkdln.svg" alt="" class="iconos" />
-        <img src="/img/icono-github.svg" alt="" class="iconos" />
-        <img src="/img/icono-spotify.svg" alt="" class="iconos" />
+        <img
+          src="/img/icono-linkdln.svg"
+          alt=""
+          class="iconos"
+          onclick="irLinkdln()"
+        />
+        <img
+          src="/img/icono-github.svg"
+          alt=""
+          class="iconos"
+          onclick="irGithub()"
+        />
+        <img
+          src="/img/icono-spotify.svg"
+          alt=""
+          class="iconos"
+          onclick="irSpotify()"
+        />
         <h3>© 2024 Polaris corporation</h3>
       </div>
     </section>
 
     <script src="/script/contacto-animacion.js"></script>
+    <script src="/script/scripts.js"></script>
   </body>
 </html>
