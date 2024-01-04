@@ -1,0 +1,44 @@
+/*movil*/
+@media (max-width: 27rem) {
+  html {
+    /*    background-color: red;*/
+    height: 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #373737;
+    height: auto;
+    width: 100%;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .seccion {
+    /*background-color: blue;*/
+    display: grid;
+    grid-template-columns: 19rem;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .formulario {
+    width: 100%;
+    height: auto;
+  }
+  input,
+  textarea {
+    width: 90%;
+  }
+  .console-container {
+    width: 100%;
+    height: auto;
+    font-size: 2.3rem;
+    margin: 0 auto;
+  }
+  h3 {
+    color: #fff;
+  }
+}

@@ -230,6 +230,9 @@ figcaption {
   padding-right: 10px;
   margin-top: 15px;
 }
+.icono-menu {
+  display: none;
+}
 .input-contenido {
   width: 400px;
   margin: 0 auto;
@@ -277,4 +280,6 @@ figcaption {
 .footer-contenido--visible {
   transform: translateY(0);
   opacity: 1;
+}
+.menu-responsive {
 }

@@ -231,3 +231,9 @@ function isInViewFooter(element) {
       (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
   );
 }
+/////////////////
+function toggleMenu() {
+  var responsiveMenu = document.querySelector(".responsive-menu");
+  responsiveMenu.style.display =
+    responsiveMenu.style.display === "block" ? "none" : "block";
+}
