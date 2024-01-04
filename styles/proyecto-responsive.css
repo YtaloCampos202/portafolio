@@ -1,10 +1,5 @@
-/*movil*/
 @media (max-width: 27rem) {
-  html {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
+  html,
   body {
     overflow-x: hidden;
     margin: 0;
@@ -27,78 +22,16 @@
     font-size: 1.8rem;
     text-align: center;
   }
-
-  .contenedor-presentacion {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    row-gap: 1000px;
-  }
-  .texto {
-    font-size: 2.1rem;
-  }
-  .pantalla-inicio {
+  .contenedor-tarjetas {
     display: flex;
+    flex-direction: column;
   }
-  .titulo-presentacion {
-    font-size: 1.3rem;
-  }
-  .texto-presentacion {
-    display: none;
-  }
-  .presentacion {
-    width: 100%;
-    text-align: center;
-  }
-  .icono-menu {
-    width: 3rem;
-    float: right;
-    display: flex;
-  }
-  /*** Mis Proyectos ***/
   .pantalla-proyectos {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
   }
-  .pantalla-proyectos h2 {
-    text-align: center;
-  }
-  .contenedor-tarjetas {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-  }
-  .link-proyectos {
-    margin-bottom: 1rem;
-    justify-self: center;
-  }
-  .pantalla-contactame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .pantalla-contactame h2 {
-    text-align: center;
-  }
-  .contenido-formulario label {
-    padding-top: 1px;
-    padding-bottom: 13px;
-    padding-left: 5px;
-  }
-  .formulario {
-    width: 25rem;
-    height: auto;
-  }
-  .input-contenido {
-    width: 23rem;
-
-    margin: 0;
-    justify-items: center;
-    display: flex;
-  }
-  /***/
   footer {
     display: flex;
     justify-content: center;
@@ -115,11 +48,20 @@
     justify-self: center;
     margin-left: 1rem;
   }
+  section {
+    margin-bottom: -10rem;
+  }
+  .espacio-figure {
+    margin-bottom: 0;
+  }
   .header {
     position: fixed;
   }
 }
-
+.menu-responsive {
+  display: none;
+}
+/*** navegador ***/
 @media only screen and (max-width: 768px) {
   .menu-responsive {
     display: block;
@@ -146,4 +88,9 @@
     cursor: pointer;
     margin: 10px;
   }
+}
+.icono-menu {
+  width: 3rem;
+  float: right;
+  display: flex;
 }

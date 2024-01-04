@@ -83,7 +83,7 @@ figcaption {
   border: 1px solid #124b83;
   /**/
   position: absolute;
-  bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -204,7 +204,6 @@ figcaption {
   margin-bottom: 50px;
 }
 .tarjeta-contenedor {
-  /*background-color: red;*/
   height: 600px;
   align-self: center;
   display: flex;
@@ -282,4 +281,5 @@ figcaption {
   opacity: 1;
 }
 .menu-responsive {
+  display: none;
 }

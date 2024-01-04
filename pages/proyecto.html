@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/proyecto.css" />
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/proyecto-responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +29,19 @@
               </li>
             </ul>
           </nav>
+          <div class="menu-responsive">
+            <img
+              src="/img/menu.svg"
+              alt=""
+              class="icono-menu"
+              onclick="toggleMenu()"
+            />
+            <ul class="responsive-menu">
+              <li class="menu-li" onclick="irInicio()">Inicio</li>
+
+              <li class="menu-li" onclick="irContactame()">Contactame</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -156,7 +170,7 @@
       <div class="footer-linea"></div>
       <div class="contenedor">
         <div class="footer-contenido">
-          <h3>© 2024 Polaris corporation</h3>
+          <h3 class="copy">© 2024 Polaris corporation</h3>
           <div class="lista-contacto">
             <div>
               <h3>contacto</h3>

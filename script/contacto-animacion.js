@@ -1,13 +1,7 @@
-// function([string1, string2],target id,[color1,color2])
 consoleText(["Escribeme", "un correo", "Ytalo Campos."], "text", [
   "lightblue",
   "lightblue",
   "tomato",
-  //"rebeccapurple",
-  //"tomato",
-  /*"lightblue",
-  //"lightblue",
-  "tomato",*/
 ]);
 
 function consoleText(words, id, colors) {

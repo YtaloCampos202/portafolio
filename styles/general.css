@@ -128,35 +128,3 @@ input.error {
 textarea.error {
   border: 1px solid red;
 }
-/*header h1 {
-  position: relative;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
-}
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header ul li {
-  position: relative;
-  list-style: none;
-}
-header ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.6s;
-}*/
-/*
-#124B83- color azul
-*/
